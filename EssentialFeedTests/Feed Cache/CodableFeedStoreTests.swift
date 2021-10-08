@@ -112,17 +112,18 @@ class CodableFeedStoreTests: XCTestCase {
 	}
 
 	func test_retrieve_deliversFailureOnRetrievalError() {
-		let sut = makeSUT()
+		let storeURL = testSpecificStoreURL()
+		let sut = makeSUT(storeURL: storeURL)
 
-		try! "Invalid data".write(to: testSpecificStoreURL(), atomically: false, encoding: .utf8)
+		try! "Invalid data".write(to: storeURL, atomically: false, encoding: .utf8)
 
 		expect(sut, toRetrieve: .failure(anyNSError()))
 	}
 
 	// MARK: - Helpers
 
-	private func makeSUT(file: StaticString = #filePath, line: UInt = #line) -> CodableFeedStore {
-		let sut =  CodableFeedStore(storeURL: testSpecificStoreURL())
+	private func makeSUT(storeURL: URL? = nil, file: StaticString = #filePath, line: UInt = #line) -> CodableFeedStore {
+		let sut =  CodableFeedStore(storeURL: storeURL ?? testSpecificStoreURL())
 		trackForMemoryLeaks(sut)
 		return sut
 	}
@@ -144,8 +145,8 @@ class CodableFeedStoreTests: XCTestCase {
 	private func expect(_ sut: CodableFeedStore, toRetrieve expectedResult: RetrieveCachedFeedResult, file: StaticString = #filePath, line: UInt = #line) {
 		let exp = expectation(description: "Wait for cache retireval")
 
-		sut.retrieve { retireveResult in
-			switch (expectedResult, retireveResult) {
+		sut.retrieve { retrieveResult in
+			switch (expectedResult, retrieveResult) {
 			case (.empty, .empty),
 				 (.failure, .failure):
 				break
@@ -155,7 +156,7 @@ class CodableFeedStoreTests: XCTestCase {
 				XCTAssertEqual(retrieved.timestamp, expected.timestamp, file: file, line: line)
 
 			default:
-				XCTFail("Expected to retrieve \(expectedResult), got \(retireveResult) instead", file: file, line: line)
+				XCTFail("Expected to retrieve \(expectedResult), got \(retrieveResult) instead", file: file, line: line)
 			}
 
 			exp.fulfill()
