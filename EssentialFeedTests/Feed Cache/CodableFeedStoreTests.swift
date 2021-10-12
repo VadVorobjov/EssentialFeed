@@ -166,10 +166,12 @@ class CodableFeedStoreTests: XCTestCase {
 	private func insert(_ cache: (feed: [LocalFeedImage], timestamp: Date), to sut: FeedStore) -> Error? {
 		let exp = expectation(description: "Wait for cache insertion")
 		var insertionError: Error?
+
 		sut.insert(cache.feed, timestamp: cache.timestamp) { receivedInsertionError in
 			insertionError = receivedInsertionError
 			exp.fulfill()
 		}
+
 		wait(for: [exp], timeout: 1.0)
 		return insertionError
 	}
@@ -182,7 +184,8 @@ class CodableFeedStoreTests: XCTestCase {
 			deletionError = receivedDeletionError
 			exp.fulfill()
 		}
-		wait(for: [exp], timeout: 1.0)
+		
+		wait(for: [exp], timeout: 15.0)
 		return deletionError
 	}
 
