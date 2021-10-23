@@ -48,7 +48,15 @@ public final class CoreDataFeedStore: FeedStore {
 	}
 
 	public func deleteCachedFeed(completion: @escaping DeletionCompletion) {
-		completion(nil)
+		let context = self.context
+		context.perform {
+			do {
+				try ManagedCache.find(in: context).map(context.delete).map(context.save)
+				completion(nil)
+			} catch {
+				completion(error)
+			}
+		}
 	}
 }
 
@@ -88,7 +96,7 @@ private class ManagedCache: NSManagedObject {
 	@NSManaged var feed: NSOrderedSet
 
 	static func find(in context: NSManagedObjectContext) throws -> ManagedCache? {
-		let request = NSFetchRequest<ManagedCache>(entityName: ManagedCache.entity().name!)
+		let request = NSFetchRequest<ManagedCache>(entityName: entity().name!)
 		request.returnsObjectsAsFaults = false
 		return try context.fetch(request).first
 	}
