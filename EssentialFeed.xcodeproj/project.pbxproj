@@ -49,6 +49,7 @@
 		4174477927037AC4004FF046 /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174477827037AC4004FF046 /* LocalFeedImage.swift */; };
 		41DBDBBB27046C71001F0717 /* LoadFeedFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DBDBBA27046C71001F0717 /* LoadFeedFromCacheUseCaseTests.swift */; };
 		41DBDBBE27047163001F0717 /* FeedStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DBDBBD27047163001F0717 /* FeedStoreSpy.swift */; };
+		D240CF0527B1A5E60049DF7B /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D240CF0427B1A5E60049DF7B /* FeedViewControllerTests.swift */; };
 		D27D9D3D27B139C100B9DBB8 /* EssentialFeediOS.docc in Sources */ = {isa = PBXBuildFile; fileRef = D27D9D3C27B139C100B9DBB8 /* EssentialFeediOS.docc */; };
 		D27D9D4327B139C100B9DBB8 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27D9D3927B139C100B9DBB8 /* EssentialFeediOS.framework */; };
 /* End PBXBuildFile section */
@@ -128,6 +129,7 @@
 		4174477827037AC4004FF046 /* LocalFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImage.swift; sourceTree = "<group>"; };
 		41DBDBBA27046C71001F0717 /* LoadFeedFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		41DBDBBD27047163001F0717 /* FeedStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreSpy.swift; sourceTree = "<group>"; };
+		D240CF0427B1A5E60049DF7B /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
 		D27D9D3927B139C100B9DBB8 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27D9D3C27B139C100B9DBB8 /* EssentialFeediOS.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeediOS.docc; sourceTree = "<group>"; };
 		D27D9D4227B139C100B9DBB8 /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -367,6 +369,7 @@
 		D27D9D4627B139C100B9DBB8 /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				D240CF0427B1A5E60049DF7B /* FeedViewControllerTests.swift */,
 			);
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 					};
 					D27D9D4127B139C100B9DBB8 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -677,6 +681,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D240CF0527B1A5E60049DF7B /* FeedViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1072,16 +1077,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VU9T5K6KZV;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Wolf-Alliance.EssentialFeediOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1090,10 +1102,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VU9T5K6KZV;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 12.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Wolf-Alliance.EssentialFeediOSTests";
