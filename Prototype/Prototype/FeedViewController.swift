@@ -37,6 +37,6 @@ extension FeedImageCell {
         descriptionLabel.text = model.description
         descriptionLabel.isHighlighted = model.description == nil
         
-        feedImageView.image = UIImage(named: model.imageName)
+        fadeIn(UIImage(named:model.imageName))
     }
 }
