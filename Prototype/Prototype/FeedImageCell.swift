@@ -31,7 +31,7 @@ final class FeedImageCell: UITableViewCell {
     func fadeIn(_ image: UIImage?) {
         feedImageView.image = image
         
-        UIView.animate(withDuration: 0.25, delay: 1.25, options: [], animations: {
+        UIView.animate(withDuration: 0.25, delay: 19.25, options: [], animations: {
             self.feedImageView.alpha = 1
         }, completion: { completed in
             if completed {
