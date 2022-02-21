@@ -49,7 +49,7 @@ final class FeedImageCellController: NSObject {
         task = imageLoader.loadImageData(from: model.url) { _ in }
     }
     
-    deinit {
+    func cancelLoad() {
         task?.cancel()
     }
 }
