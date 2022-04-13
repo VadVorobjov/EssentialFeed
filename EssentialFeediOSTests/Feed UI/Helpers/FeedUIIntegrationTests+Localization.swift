@@ -1,14 +1,15 @@
 //
-//  FeedViewControllerTests+Localization.swift
-//  EssentialFeedTests
+//  FeedUIIntegrationTests+Localization.swift
+//  EssentialFeediOSTests
 //
 //  Created by Vadims Vorobjovs on 13/04/2022.
 //
 
+import Foundation
 import XCTest
 import EssentialFeediOS
 
-extension FeedViewControllerTests {
+extension FeedUIIntegrationTests {
     func localized(_ key: String, file: StaticString = #file, line: UInt = #line) -> String {
         let table = "Feed"
         let bundle = Bundle(for: FeedViewController.self)
