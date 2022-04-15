@@ -290,7 +290,6 @@
 				D269ACAE2807364B00C9B58D /* Feed UI */,
 				4153299C26D4FEB500EFBF56 /* Feed API */,
 				416D0BF926FDCAD100EC7795 /* Feed Cache */,
-				4153299F26DE046C00EFBF56 /* Helpers */,
 				411D364C26CA7D2C00F77BC8 /* Info.plist */,
 			);
 			path = EssentialFeedTests;
@@ -365,13 +364,6 @@
 				411D365B26CBB34500F77BC8 /* LoadFeedFromRemoteUseCaseTests.swift */,
 			);
 			path = "Feed API";
-			sourceTree = "<group>";
-		};
-		4153299F26DE046C00EFBF56 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		415329A926E38DCA00EFBF56 /* EssentialFeedAPIEndToEndTests */ = {
