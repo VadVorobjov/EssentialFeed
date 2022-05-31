@@ -87,6 +87,7 @@
 		D27D9D3D27B139C100B9DBB8 /* EssentialFeediOS.docc in Sources */ = {isa = PBXBuildFile; fileRef = D27D9D3C27B139C100B9DBB8 /* EssentialFeediOS.docc */; };
 		D27D9D4327B139C100B9DBB8 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27D9D3927B139C100B9DBB8 /* EssentialFeediOS.framework */; };
 		D2CAD18028469B1D0060E3CB /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD17F28469B1D0060E3CB /* FeedErrorViewModel.swift */; };
+		D2CAD18228469C100060E3CB /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD18128469C100060E3CB /* UIRefreshControl+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -210,6 +211,7 @@
 		D27D9D3C27B139C100B9DBB8 /* EssentialFeediOS.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeediOS.docc; sourceTree = "<group>"; };
 		D27D9D4227B139C100B9DBB8 /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CAD17F28469B1D0060E3CB /* FeedErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedErrorViewModel.swift; sourceTree = "<group>"; };
+		D2CAD18128469C100060E3CB /* UIRefreshControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -577,6 +579,7 @@
 				D269ACA12805F65F00C9B58D /* UIImageView+Animations.swift */,
 				D269AC9F2805F4B600C9B58D /* UITableView+Dequeueing.swift */,
 				D245714127BFEC1900ABCDA9 /* UIView+Shimmering.swift */,
+				D2CAD18128469C100060E3CB /* UIRefreshControl+Helpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -901,6 +904,7 @@
 				D245714227BFEC1900ABCDA9 /* UIView+Shimmering.swift in Sources */,
 				D268E7E2282E9B7300D71A4B /* FeedLoaderPresentationAdapter.swift in Sources */,
 				D268E7E4282E9BB300D71A4B /* FeedViewAdapter.swift in Sources */,
+				D2CAD18228469C100060E3CB /* UIRefreshControl+Helpers.swift in Sources */,
 				D269ACA22805F65F00C9B58D /* UIImageView+Animations.swift in Sources */,
 				D22448C228468B5C0033CB40 /* ErrorView.swift in Sources */,
 				D268E7E0282E9B1F00D71A4B /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
