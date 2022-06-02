@@ -88,6 +88,7 @@
 		D27D9D4327B139C100B9DBB8 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27D9D3927B139C100B9DBB8 /* EssentialFeediOS.framework */; };
 		D2CAD18028469B1D0060E3CB /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD17F28469B1D0060E3CB /* FeedErrorViewModel.swift */; };
 		D2CAD18228469C100060E3CB /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD18128469C100060E3CB /* UIRefreshControl+Helpers.swift */; };
+		D2CAD1852849496F0060E3CB /* FeedPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD1842849496F0060E3CB /* FeedPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,6 +213,7 @@
 		D27D9D4227B139C100B9DBB8 /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CAD17F28469B1D0060E3CB /* FeedErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedErrorViewModel.swift; sourceTree = "<group>"; };
 		D2CAD18128469C100060E3CB /* UIRefreshControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Helpers.swift"; sourceTree = "<group>"; };
+		D2CAD1842849496F0060E3CB /* FeedPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +310,7 @@
 		411D364926CA7D2C00F77BC8 /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				D2CAD183284949500060E3CB /* Feed Presentation */,
 				D269ACAE2807364B00C9B58D /* Feed UI */,
 				4153299C26D4FEB500EFBF56 /* Feed API */,
 				416D0BF926FDCAD100EC7795 /* Feed Cache */,
@@ -584,6 +587,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		D2CAD183284949500060E3CB /* Feed Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D2CAD1842849496F0060E3CB /* FeedPresenterTests.swift */,
+			);
+			path = "Feed Presentation";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -849,6 +860,7 @@
 			files = (
 				41649364270A2A8C00EE596C /* ValidateFeedCacheUseCaseTests.swift in Sources */,
 				413B06752717166700468236 /* XCTestCase+FailableInsertFeedStoreSpecs.swift in Sources */,
+				D2CAD1852849496F0060E3CB /* FeedPresenterTests.swift in Sources */,
 				D269ACD72808048200C9B58D /* SharedTestHelpers.swift in Sources */,
 				D269ACD12808031E00C9B58D /* FeedStoreSpy.swift in Sources */,
 				411D365C26CBB34500F77BC8 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
