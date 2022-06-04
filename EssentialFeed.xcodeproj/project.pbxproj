@@ -89,7 +89,8 @@
 		D2CAD18028469B1D0060E3CB /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD17F28469B1D0060E3CB /* FeedErrorViewModel.swift */; };
 		D2CAD18228469C100060E3CB /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD18128469C100060E3CB /* UIRefreshControl+Helpers.swift */; };
 		D2CAD1852849496F0060E3CB /* FeedPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD1842849496F0060E3CB /* FeedPresenterTests.swift */; };
-		D2CAD189284C0ACF0060E3CB /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2CAD18B284C0ACF0060E3CB /* Feed.strings */; };
+		D2CAD190284C0F1E0060E3CB /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD18F284C0F1E0060E3CB /* FeedPresenter.swift */; };
+		D2CAD191284C110D0060E3CB /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2CAD18B284C0ACF0060E3CB /* Feed.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +219,7 @@
 		D2CAD18A284C0ACF0060E3CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		D2CAD18C284C0AD70060E3CB /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
 		D2CAD18D284C0AD80060E3CB /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
+		D2CAD18F284C0F1E0060E3CB /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +303,7 @@
 		411D363E26CA7D2B00F77BC8 /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				D2CAD18E284C0F0B0060E3CB /* Feed Presentation */,
 				411D363F26CA7D2B00F77BC8 /* EssentialFeed.h */,
 				416D0BF726FDC5A300EC7795 /* README.md */,
 				411D364026CA7D2B00F77BC8 /* Info.plist */,
@@ -595,6 +598,14 @@
 			isa = PBXGroup;
 			children = (
 				D2CAD1842849496F0060E3CB /* FeedPresenterTests.swift */,
+			);
+			path = "Feed Presentation";
+			sourceTree = "<group>";
+		};
+		D2CAD18E284C0F0B0060E3CB /* Feed Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D2CAD18F284C0F1E0060E3CB /* FeedPresenter.swift */,
 				D2CAD18B284C0ACF0060E3CB /* Feed.strings */,
 			);
 			path = "Feed Presentation";
@@ -791,6 +802,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CAD191284C110D0060E3CB /* Feed.strings in Resources */,
 				416D0BF826FDC5A300EC7795 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -799,7 +811,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2CAD189284C0ACF0060E3CB /* Feed.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -853,6 +864,7 @@
 				417447732702558D004FF046 /* LocalFeedLoader.swift in Sources */,
 				4153299926D4CE6100EFBF56 /* HTTPClient.swift in Sources */,
 				411D365726CA7D5600F77BC8 /* FeedImage.swift in Sources */,
+				D2CAD190284C0F1E0060E3CB /* FeedPresenter.swift in Sources */,
 				415329A326DE54DA00EFBF56 /* URLSessionHTTPClient.swift in Sources */,
 				413B0687272489FD00468236 /* ManagedCache.swift in Sources */,
 				413B067C2721FFF300468236 /* CoreDataFeedStore.swift in Sources */,
