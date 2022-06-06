@@ -89,7 +89,7 @@
 		D2CAD19B284CCEA30060E3CB /* FeedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D269ACCF28073D8900C9B58D /* FeedLocalizationTests.swift */; };
 		D2CAD19E284E8A2F0060E3CB /* FeedImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D269AC9927EDF57D00C9B58D /* FeedImagePresenter.swift */; };
 		D2CAD1A3284E8AD50060E3CB /* FeedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD1A2284E8AD50060E3CB /* FeedImageViewModel.swift */; };
-		D2CAD1A4284E8CD30060E3CB /* FeedImagePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD19C284CD06B0060E3CB /* FeedImagePresenterTests.swift */; };
+		D2CAD1A6284E8D9E0060E3CB /* FeedImagePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD19C284CD06B0060E3CB /* FeedImagePresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -584,8 +584,8 @@
 				D2CAD192284C11980060E3CB /* FeedViewModel.swift */,
 				D2CAD194284C11EB0060E3CB /* FeedLoadingViewModel.swift */,
 				D2CAD196284C12040060E3CB /* FeedErrorViewModel.swift */,
-				D2CAD1A2284E8AD50060E3CB /* FeedImageViewModel.swift */,
 				D2CAD18B284C0ACF0060E3CB /* Feed.strings */,
+				D2CAD1A2284E8AD50060E3CB /* FeedImageViewModel.swift */,
 			);
 			path = "Feed Presentation";
 			sourceTree = "<group>";
@@ -863,7 +863,7 @@
 				413B06752717166700468236 /* XCTestCase+FailableInsertFeedStoreSpecs.swift in Sources */,
 				D2CAD1852849496F0060E3CB /* FeedPresenterTests.swift in Sources */,
 				D269ACD72808048200C9B58D /* SharedTestHelpers.swift in Sources */,
-				D2CAD1A4284E8CD30060E3CB /* FeedImagePresenterTests.swift in Sources */,
+				D2CAD1A6284E8D9E0060E3CB /* FeedImagePresenterTests.swift in Sources */,
 				D269ACD12808031E00C9B58D /* FeedStoreSpy.swift in Sources */,
 				D2CAD19B284CCEA30060E3CB /* FeedLocalizationTests.swift in Sources */,
 				411D365C26CBB34500F77BC8 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
