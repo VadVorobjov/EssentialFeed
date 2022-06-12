@@ -95,6 +95,7 @@
 		D2CAD1AE2853888D0060E3CB /* RemoteFeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD1AD2853888D0060E3CB /* RemoteFeedImageDataLoader.swift */; };
 		D2CAD1B12855F1890060E3CB /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD1B02855F1890060E3CB /* HTTPURLResponse+StatusCode.swift */; };
 		D2CAD1B32855F4CA0060E3CB /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD1B22855F4CA0060E3CB /* URLProtocolStub.swift */; };
+		D2CAD1B5285615A80060E3CB /* LocalFeedImageDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD1B4285615A80060E3CB /* LocalFeedImageDataLoaderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -226,6 +227,7 @@
 		D2CAD1AD2853888D0060E3CB /* RemoteFeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedImageDataLoader.swift; sourceTree = "<group>"; };
 		D2CAD1B02855F1890060E3CB /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
 		D2CAD1B22855F4CA0060E3CB /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
+		D2CAD1B4285615A80060E3CB /* LocalFeedImageDataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImageDataLoaderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -426,6 +428,7 @@
 				41DBDBBA27046C71001F0717 /* LoadFeedFromCacheUseCaseTests.swift */,
 				41649363270A2A8C00EE596C /* ValidateFeedCacheUseCaseTests.swift */,
 				413B06792721FDFB00468236 /* CoreDataFeedStoreTests.swift */,
+				D2CAD1B4285615A80060E3CB /* LocalFeedImageDataLoaderTests.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -895,6 +898,7 @@
 				D2CAD1AC2853863B0060E3CB /* HTTPClientSpy.swift in Sources */,
 				D269ACD12808031E00C9B58D /* FeedStoreSpy.swift in Sources */,
 				D2CAD19B284CCEA30060E3CB /* FeedLocalizationTests.swift in Sources */,
+				D2CAD1B5285615A80060E3CB /* LocalFeedImageDataLoaderTests.swift in Sources */,
 				411D365C26CBB34500F77BC8 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 				4153299E26D92F5200EFBF56 /* URLSessionHTTPClientTests.swift in Sources */,
 				413B0677271717BE00468236 /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */,
