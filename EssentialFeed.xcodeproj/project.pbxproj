@@ -309,13 +309,13 @@
 		411D363E26CA7D2B00F77BC8 /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
-				D2CAD18E284C0F0B0060E3CB /* Feed Presentation */,
 				411D363F26CA7D2B00F77BC8 /* EssentialFeed.h */,
 				416D0BF726FDC5A300EC7795 /* README.md */,
 				411D364026CA7D2B00F77BC8 /* Info.plist */,
+				411D365D26CC496C00F77BC8 /* Feed API */,
 				4174477127025574004FF046 /* Feed Cache */,
 				411D365A26CA7EEB00F77BC8 /* Feed Feature */,
-				411D365D26CC496C00F77BC8 /* Feed API */,
+				D2CAD18E284C0F0B0060E3CB /* Feed Presentation */,
 			);
 			path = EssentialFeed;
 			sourceTree = "<group>";
