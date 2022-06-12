@@ -94,6 +94,7 @@
 		D2CAD1AC2853863B0060E3CB /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD1AB2853863B0060E3CB /* HTTPClientSpy.swift */; };
 		D2CAD1AE2853888D0060E3CB /* RemoteFeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD1AD2853888D0060E3CB /* RemoteFeedImageDataLoader.swift */; };
 		D2CAD1B12855F1890060E3CB /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD1B02855F1890060E3CB /* HTTPURLResponse+StatusCode.swift */; };
+		D2CAD1B32855F4CA0060E3CB /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD1B22855F4CA0060E3CB /* URLProtocolStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -224,6 +225,7 @@
 		D2CAD1AB2853863B0060E3CB /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
 		D2CAD1AD2853888D0060E3CB /* RemoteFeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedImageDataLoader.swift; sourceTree = "<group>"; };
 		D2CAD1B02855F1890060E3CB /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
+		D2CAD1B22855F4CA0060E3CB /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -598,6 +600,7 @@
 			isa = PBXGroup;
 			children = (
 				D2CAD1AB2853863B0060E3CB /* HTTPClientSpy.swift */,
+				D2CAD1B22855F4CA0060E3CB /* URLProtocolStub.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -883,6 +886,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41649364270A2A8C00EE596C /* ValidateFeedCacheUseCaseTests.swift in Sources */,
+				D2CAD1B32855F4CA0060E3CB /* URLProtocolStub.swift in Sources */,
 				413B06752717166700468236 /* XCTestCase+FailableInsertFeedStoreSpecs.swift in Sources */,
 				D2CAD1852849496F0060E3CB /* FeedPresenterTests.swift in Sources */,
 				D2CAD1A928507CCC0060E3CB /* RemoteFeedImageDataLoaderTests.swift in Sources */,
