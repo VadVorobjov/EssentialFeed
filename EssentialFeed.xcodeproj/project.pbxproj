@@ -98,6 +98,7 @@
 		D2CAD1B5285615A80060E3CB /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD1B4285615A80060E3CB /* LoadFeedImageDataFromCacheUseCaseTests.swift */; };
 		D2CEAC3428577CC0004751F1 /* LocalFeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEAC3328577CC0004751F1 /* LocalFeedImageDataLoader.swift */; };
 		D2CEAC3628577D60004751F1 /* FeedImageDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEAC3528577D60004751F1 /* FeedImageDataStore.swift */; };
+		D2CEAC3828578F38004751F1 /* FeedImageDataStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEAC3728578F38004751F1 /* FeedImageDataStoreSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,6 +233,7 @@
 		D2CAD1B4285615A80060E3CB /* LoadFeedImageDataFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedImageDataFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		D2CEAC3328577CC0004751F1 /* LocalFeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImageDataLoader.swift; sourceTree = "<group>"; };
 		D2CEAC3528577D60004751F1 /* FeedImageDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataStore.swift; sourceTree = "<group>"; };
+		D2CEAC3728578F38004751F1 /* FeedImageDataStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataStoreSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -456,6 +458,7 @@
 			children = (
 				41DBDBBD27047163001F0717 /* FeedStoreSpy.swift */,
 				41649365270A3DE900EE596C /* FeedCacheTestHelpers.swift */,
+				D2CEAC3728578F38004751F1 /* FeedImageDataStoreSpy.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -911,6 +914,7 @@
 				4153299E26D92F5200EFBF56 /* URLSessionHTTPClientTests.swift in Sources */,
 				413B0677271717BE00468236 /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */,
 				D269ACD32808035500C9B58D /* FeedCacheTestHelpers.swift in Sources */,
+				D2CEAC3828578F38004751F1 /* FeedImageDataStoreSpy.swift in Sources */,
 				41DBDBBB27046C71001F0717 /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
 				413B066F2716130800468236 /* FeedStoreSpecs.swift in Sources */,
 				416D0BFB26FDCAF100EC7795 /* CacheFeedUseCaseTests.swift in Sources */,
