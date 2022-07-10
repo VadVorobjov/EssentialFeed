@@ -59,7 +59,6 @@ class FeedLoaderCacheDecoratorTests: XCTestCase, FeedLoaderTestCase {
         
         enum Message: Equatable {
             case save([FeedImage])
-            
         }
         
         func save(_ feed: [FeedImage], completion: @escaping (FeedCache.Result) -> Void) {
