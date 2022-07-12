@@ -10,12 +10,6 @@ import EssentialFeed
 import EssentialApp
 import CloudKit
 
-public protocol FeedImageDataCache {
-    typealias Result = Swift.Result<Void, Error>
-    
-    func save(_ data: Data, for url: URL, completion: @escaping (Result) -> Void)
-}
-
 class FeedImageDataLoaderCacheDecorator: FeedImageDataLoader {
     private let decoratee: FeedImageDataLoader
     private let cache: FeedImageDataCache
