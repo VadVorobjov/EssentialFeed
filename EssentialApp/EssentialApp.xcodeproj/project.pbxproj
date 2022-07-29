@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D241482B289176D90031ECE7 /* UIView+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D241482A289176D90031ECE7 /* UIView+TestHelpers.swift */; };
 		D25EDE6D287AEB2F00744633 /* FeedImageDataLoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25EDE6C287AEB2F00744633 /* FeedImageDataLoaderSpy.swift */; };
 		D25EDE6F287AECEE00744633 /* XCTestCase+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25EDE6E287AECEE00744633 /* XCTestCase+FeedImageDataLoader.swift */; };
 		D25EDE73287DCFFC00744633 /* FeedImageDataLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25EDE72287DCFFC00744633 /* FeedImageDataLoaderCacheDecorator.swift */; };
@@ -79,6 +80,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D241482A289176D90031ECE7 /* UIView+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TestHelpers.swift"; sourceTree = "<group>"; };
 		D25EDE6C287AEB2F00744633 /* FeedImageDataLoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderSpy.swift; sourceTree = "<group>"; };
 		D25EDE6E287AECEE00744633 /* XCTestCase+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
 		D25EDE72287DCFFC00744633 /* FeedImageDataLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderCacheDecorator.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				D25EDE6E287AECEE00744633 /* XCTestCase+FeedImageDataLoader.swift */,
 				D25EDEB228882FFA00744633 /* HTTPClientStub.swift */,
 				D25EDEB42888308500744633 /* InMemoryFeedStore.swift */,
+				D241482A289176D90031ECE7 /* UIView+TestHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				D2F82D48286CD51900FD1439 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
 				D25EDEB328882FFA00744633 /* HTTPClientStub.swift in Sources */,
 				D2F82D38286C8D6800FD1439 /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
+				D241482B289176D90031ECE7 /* UIView+TestHelpers.swift in Sources */,
 				D25EDEAC28844FEF00744633 /* FeedViewController+TestHelpers.swift in Sources */,
 				D2F82D532875AD0D00FD1439 /* FeedLoaderStub.swift in Sources */,
 				D25EDEB128845F2100744633 /* FeedAcceptanceTests.swift in Sources */,
