@@ -7,7 +7,7 @@
 
 import EssentialFeed
 
-public class FeedImageDataLoaderCacheDecorator: FeedImageDataLoader {
+public final class FeedImageDataLoaderCacheDecorator: FeedImageDataLoader {
     private let decoratee: FeedImageDataLoader
     private let cache: FeedImageDataCache
     
@@ -19,15 +19,15 @@ public class FeedImageDataLoaderCacheDecorator: FeedImageDataLoader {
     public func loadImageData(from url: URL, completion: @escaping (FeedImageDataLoader.Result) -> Void) -> FeedImageDataLoaderTask {
         return decoratee.loadImageData(from: url) { [weak self] result in
             completion(result.map { data in
-                self?.saveIgnoringResult(data, for: url)
+                self?.cache.saveIgnoringResult(data, for: url)
                 return data
             })
         }
     }
 }
 
-private extension FeedImageDataLoaderCacheDecorator {
+private extension FeedImageDataCache {
     func saveIgnoringResult(_ data: Data, for url: URL) {
-        cache.save(data, for: url) { _ in }
+        save(data, for: url) { _ in }
     }
 }
