@@ -152,8 +152,8 @@
 		D283A7BE286B7C6D00790D3C /* EssentialApp */ = {
 			isa = PBXGroup;
 			children = (
-				D283A7CD286B7C6E00790D3C /* Info.plist */,
 				D283A7BF286B7C6D00790D3C /* AppDelegate.swift */,
+				D241482C289BE9D30031ECE7 /* CombineHelpers.swift */,
 				D25EDE8928844F0500744633 /* FeedImageDataLoaderPresentationAdapter.swift */,
 				D25EDE8828844F0500744633 /* FeedLoaderPresentationAdapter.swift */,
 				D25EDE8B28844F0600744633 /* FeedUIComposer.swift */,
@@ -161,9 +161,9 @@
 				D283A7C1286B7C6D00790D3C /* SceneDelegate.swift */,
 				D283A7C3286B7C6D00790D3C /* ViewController.swift */,
 				D25EDE8C28844F0600744633 /* WeakRefVirtualProxy.swift */,
+				D283A7CD286B7C6E00790D3C /* Info.plist */,
 				D283A7C8286B7C6E00790D3C /* Assets.xcassets */,
 				D283A7CA286B7C6E00790D3C /* LaunchScreen.storyboard */,
-				D241482C289BE9D30031ECE7 /* CombineHelpers.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -171,8 +171,8 @@
 		D283A7D5286B7C6E00790D3C /* EssentialAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				D25EDEAE288450EF00744633 /* FeedUIIntegrationTests.swift */,
 				D2F82D4B286ED21000FD1439 /* Helpers */,
+				D25EDEAE288450EF00744633 /* FeedUIIntegrationTests.swift */,
 				D25EDE852881CEB900744633 /* SceneDelegateTests.swift */,
 				D25EDEB028845F2100744633 /* FeedAcceptanceTests.swift */,
 			);
