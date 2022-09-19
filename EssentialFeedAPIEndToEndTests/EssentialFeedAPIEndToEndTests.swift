@@ -51,7 +51,7 @@ class EssentialFeedAPIEndToEndTests: XCTestCase {
 	// MARK: - Helpers
 
     private func getFeedResult(file: StaticString = #filePath, line: UInt = #line) -> Swift.Result<[FeedImage], Error>? {
-        let cleint = ephemeralClient()
+        let client = ephemeralClient()
 		let exp = expectation(description: "Wait for load completion")
 
         var receivedResult: Swift.Result<[FeedImage], Error>?
