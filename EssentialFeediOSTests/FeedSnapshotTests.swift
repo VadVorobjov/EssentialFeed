@@ -120,7 +120,7 @@ private class ImageStub: FeedImageCellControllerDelegate {
         controller?.display(ResourceLoadingViewModel(isLoading: false))
         
         if let image = image {
-            controller?.display(message)
+            controller?.display(image)
             controller?.display(ResourceErrorViewModel(message: .none))
         } else {
             controller?.display(ResourceErrorViewModel(message: "any"))
