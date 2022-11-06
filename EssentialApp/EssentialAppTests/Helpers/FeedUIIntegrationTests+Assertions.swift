@@ -9,7 +9,7 @@ import XCTest
 import EssentialFeed
 import EssentialFeediOS
 
-func assertThat(_ sut: FeedViewController, isRendering feed: [FeedImage], file: StaticString = #file, line: UInt = #line) {
+func assertThat(_ sut: ListViewController, isRendering feed: [FeedImage], file: StaticString = #file, line: UInt = #line) {
     sut.view.enforceLayoutCycle()
     
     guard sut.numberOfRenderedFeedImageViews() == feed.count else {
@@ -21,7 +21,7 @@ func assertThat(_ sut: FeedViewController, isRendering feed: [FeedImage], file: 
     }
 }
 
-private func assertThat(_ sut: FeedViewController, hasViewConfiguredFor image: FeedImage,
+private func assertThat(_ sut: ListViewController, hasViewConfiguredFor image: FeedImage,
                         at index: Int, file: StaticString = #file, line: UInt = #line) {
     let view = sut.feedImageView(at: index)
     
