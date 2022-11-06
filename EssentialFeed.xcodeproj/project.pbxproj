@@ -1166,6 +1166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D240CF0C27B1C11A0049DF7B /* XCTTestCase+MemoryLeakTrackingHelper.swift in Sources */,
+				D23CA9462917DCB90062ECC6 /* ListSnapshotTests.swift in Sources */,
 				D25EDEC728899C5400744633 /* FeedSnapshotTests.swift in Sources */,
 				D25EDED2288F32A600744633 /* XCTestCase+Snapshot.swift in Sources */,
 				D25EDED0288F325C00744633 /* UIViewController+Snapshot.swift in Sources */,
