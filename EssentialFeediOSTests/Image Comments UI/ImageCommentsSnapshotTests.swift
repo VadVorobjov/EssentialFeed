@@ -11,7 +11,6 @@ import EssentialFeediOS
 
 class ImageCommentsSnapshotTests: XCTestCase {
 
-    
     func test_listWithComments() {
         let sut = makeSUT()
         
