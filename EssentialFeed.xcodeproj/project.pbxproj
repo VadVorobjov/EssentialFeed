@@ -92,6 +92,7 @@
 		D2B5620229184F71004C8C06 /* ImageComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B5620129184F71004C8C06 /* ImageComments.storyboard */; };
 		D2B5620629185130004C8C06 /* IMAGE_COMMENTS_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B5620429185130004C8C06 /* IMAGE_COMMENTS_dark.png */; };
 		D2B5620729185130004C8C06 /* IMAGE_COMMENTS_light.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B5620529185130004C8C06 /* IMAGE_COMMENTS_light.png */; };
+		D2B562092919623A004C8C06 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B562082919623A004C8C06 /* CellController.swift */; };
 		D2CAD18228469C100060E3CB /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD18128469C100060E3CB /* UIRefreshControl+Helpers.swift */; };
 		D2CAD1852849496F0060E3CB /* FeedPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD1842849496F0060E3CB /* FeedPresenterTests.swift */; };
 		D2CAD190284C0F1E0060E3CB /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD18F284C0F1E0060E3CB /* FeedPresenter.swift */; };
@@ -251,6 +252,7 @@
 		D2B5620129184F71004C8C06 /* ImageComments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageComments.storyboard; sourceTree = "<group>"; };
 		D2B5620429185130004C8C06 /* IMAGE_COMMENTS_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMAGE_COMMENTS_dark.png; sourceTree = "<group>"; };
 		D2B5620529185130004C8C06 /* IMAGE_COMMENTS_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMAGE_COMMENTS_light.png; sourceTree = "<group>"; };
+		D2B562082919623A004C8C06 /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
 		D2CAD18128469C100060E3CB /* UIRefreshControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Helpers.swift"; sourceTree = "<group>"; };
 		D2CAD1842849496F0060E3CB /* FeedPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenterTests.swift; sourceTree = "<group>"; };
 		D2CAD18A284C0ACF0060E3CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
@@ -581,6 +583,7 @@
 			isa = PBXGroup;
 			children = (
 				D240CF0D27B2AFC50049DF7B /* ListViewController.swift */,
+				D2B562082919623A004C8C06 /* CellController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1220,6 +1223,7 @@
 				D22448C228468B5C0033CB40 /* ErrorView.swift in Sources */,
 				D240CF1027B43B330049DF7B /* FeedImageCell.swift in Sources */,
 				D27D9D3D27B139C100B9DBB8 /* EssentialFeediOS.docc in Sources */,
+				D2B562092919623A004C8C06 /* CellController.swift in Sources */,
 				D2B561FC2918490D004C8C06 /* ImageCommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
