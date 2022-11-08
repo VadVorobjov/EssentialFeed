@@ -96,6 +96,7 @@
 		D2B5620B2919A9A6004C8C06 /* LIST_WITH_ERROR_MESSAGE_light_extraExtraExtraLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B5620A2919A9A6004C8C06 /* LIST_WITH_ERROR_MESSAGE_light_extraExtraExtraLarge.png */; };
 		D2B5620D2919AC50004C8C06 /* IMAGE_COMMENTS_light_extraExtraExtraLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B5620C2919AC50004C8C06 /* IMAGE_COMMENTS_light_extraExtraExtraLarge.png */; };
 		D2B5620F2919AC5E004C8C06 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B5620E2919AC5E004C8C06 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png */; };
+		D2B56211291AD2C9004C8C06 /* UIView+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B56210291AD2C9004C8C06 /* UIView+Container.swift */; };
 		D2CAD18228469C100060E3CB /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD18128469C100060E3CB /* UIRefreshControl+Helpers.swift */; };
 		D2CAD1852849496F0060E3CB /* FeedPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD1842849496F0060E3CB /* FeedPresenterTests.swift */; };
 		D2CAD190284C0F1E0060E3CB /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD18F284C0F1E0060E3CB /* FeedPresenter.swift */; };
@@ -259,6 +260,7 @@
 		D2B5620A2919A9A6004C8C06 /* LIST_WITH_ERROR_MESSAGE_light_extraExtraExtraLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LIST_WITH_ERROR_MESSAGE_light_extraExtraExtraLarge.png; sourceTree = "<group>"; };
 		D2B5620C2919AC50004C8C06 /* IMAGE_COMMENTS_light_extraExtraExtraLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMAGE_COMMENTS_light_extraExtraExtraLarge.png; sourceTree = "<group>"; };
 		D2B5620E2919AC5E004C8C06 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_CONTENT_light_extraExtraExtraLarge.png; sourceTree = "<group>"; };
+		D2B56210291AD2C9004C8C06 /* UIView+Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Container.swift"; sourceTree = "<group>"; };
 		D2CAD18128469C100060E3CB /* UIRefreshControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Helpers.swift"; sourceTree = "<group>"; };
 		D2CAD1842849496F0060E3CB /* FeedPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenterTests.swift; sourceTree = "<group>"; };
 		D2CAD18A284C0ACF0060E3CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
@@ -610,6 +612,7 @@
 				D269AC9F2805F4B600C9B58D /* UITableView+Dequeueing.swift */,
 				D2CAD18128469C100060E3CB /* UIRefreshControl+Helpers.swift */,
 				D25EDECD288ED1DD00744633 /* UITableView+HeaderSizing.swift */,
+				D2B56210291AD2C9004C8C06 /* UIView+Container.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1230,6 +1233,7 @@
 				D2B561F929184788004C8C06 /* ImageCommentCellController.swift in Sources */,
 				D245714227BFEC1900ABCDA9 /* UIView+Shimmering.swift in Sources */,
 				D25EDECE288ED1DD00744633 /* UITableView+HeaderSizing.swift in Sources */,
+				D2B56211291AD2C9004C8C06 /* UIView+Container.swift in Sources */,
 				D2CAD18228469C100060E3CB /* UIRefreshControl+Helpers.swift in Sources */,
 				D269ACA22805F65F00C9B58D /* UIImageView+Animations.swift in Sources */,
 				D22448C228468B5C0033CB40 /* ErrorView.swift in Sources */,
