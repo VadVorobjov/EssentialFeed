@@ -36,13 +36,13 @@ class CommentsUIIntegrationTests: FeedUIIntegrationTests {
         XCTAssertEqual(loader.loadCommentsCallCount, 3, "Expected yet another loading request once user initiates another reload")
     }
     
-    override func test_loadingFeedIndicator_isVisibleWhileLoadingFeed() {
+    func test_loadingCommentsIndicator_isVisibleWhileLoadingComments() {
         let (sut, loader) = makeSUT()
         
         sut.loadViewIfNeeded()
         XCTAssertTrue(sut.isShowingLoadingIndicator, "Expected loading indicator once view is loaded")
         
-        loader.completeFeedLoading(at: 0)
+        loader.completeCommentsLoading(at: 0)
         XCTAssertFalse(sut.isShowingLoadingIndicator, "Expected no loading indicator once loading completes successfully")
         
         sut.simulateUserInitiatedReload()
@@ -64,11 +64,11 @@ class CommentsUIIntegrationTests: FeedUIIntegrationTests {
         
         XCTAssertEqual(sut.numberOfRenderedFeedImageViews(), 0)
         
-        loader.completeFeedLoading(with: [image0], at: 0)
+        loader.completeCommentsLoading(with: [image0], at: 0)
         assertThat(sut, isRendering: [image0])
         
         sut.simulateUserInitiatedReload()
-        loader.completeFeedLoading(with: [image0, image1, image2, image3], at: 1)
+        loader.completeCommentsLoading(with: [image0, image1, image2, image3], at: 1)
         assertThat(sut, isRendering: [image0, image1, image2, image3])
     }
     
@@ -78,11 +78,11 @@ class CommentsUIIntegrationTests: FeedUIIntegrationTests {
         let (sut, loader) = makeSUT()
         
         sut.loadViewIfNeeded()
-        loader.completeFeedLoading(with: [image0, image1], at: 0)
+        loader.completeCommentsLoading(with: [image0, image1], at: 0)
         assertThat(sut, isRendering: [image0, image1])
         
         sut.simulateUserInitiatedReload()
-        loader.completeFeedLoading(with: [], at: 1)
+        loader.completeCommentsLoading(with: [], at: 1)
         assertThat(sut, isRendering: [])
     }
     
@@ -91,7 +91,7 @@ class CommentsUIIntegrationTests: FeedUIIntegrationTests {
         let (sut, loader) = makeSUT()
         
         sut.loadViewIfNeeded()
-        loader.completeFeedLoading(with: [image0], at: 0)
+        loader.completeCommentsLoading(with: [image0], at: 0)
         assertThat(sut, isRendering: [image0])
         
         sut.simulateUserInitiatedReload()
@@ -105,7 +105,7 @@ class CommentsUIIntegrationTests: FeedUIIntegrationTests {
         
         let exp = expectation(description: "Wait for background queue")
         DispatchQueue.global().async {
-            loader.completeFeedLoading(at: 0)
+            loader.completeCommentsLoading(at: 0)
             exp.fulfill()
         }
         wait(for: [exp], timeout: 1.0)
@@ -164,7 +164,7 @@ class CommentsUIIntegrationTests: FeedUIIntegrationTests {
             return publisher.eraseToAnyPublisher()
         }
         
-        func completeFeedLoading(with feed: [FeedImage] = [], at index: Int = 0) {
+        func completeCommentsLoading(with feed: [FeedImage] = [], at index: Int = 0) {
             requests[index].send(feed)
         }
         
