@@ -65,8 +65,6 @@ extension FeedImageCellController: UITableViewDataSource, UITableViewDelegate, U
         cancelLoad()
     }
     
-    
-    
     private func cancelLoad() {
         releaseCellForReuse()
         delegate.didCancelImageRequest()
@@ -78,9 +76,6 @@ extension FeedImageCellController: UITableViewDataSource, UITableViewDelegate, U
 }
 
 extension FeedImageCellController: ResourceView, ResourceLoadingView, ResourceErrorView {
-    
-    public func display(_ viewModel: FeedImageViewModel) {}
-    
     public func display(_ viewModel: UIImage) {
         cell?.feedImageView.setImageAnimated(viewModel)
     }
