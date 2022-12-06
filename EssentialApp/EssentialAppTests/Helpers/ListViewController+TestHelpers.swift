@@ -7,13 +7,12 @@
 
 import UIKit
 import EssentialFeediOS
-import CloudKit
 
 extension ListViewController {
     public override func loadViewIfNeeded() {
         super.loadViewIfNeeded()
         
-        tableView.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+        tableView.frame = CGRect(x: 0, y: 0, width: 1, height: 1)
     }
     
     func simulateUserInitiatedReload() {
@@ -84,7 +83,7 @@ extension ListViewController {
         let view = simulateFeedImageViewVisible(at: row)
         
         let delegate = tableView.delegate
-        let index = IndexPath(row: row, section: feedImageSection)
+        let index = IndexPath(row: row, section: feedImagesSection)
         delegate?.tableView?(tableView, didEndDisplaying: view!, forRowAt: index)
         
         return view
@@ -92,13 +91,13 @@ extension ListViewController {
     
     func simulateTapOnFeedImage(at row: Int) {
         let delegate = tableView.delegate
-        let index = IndexPath(row: row, section: feedImageSection)
+        let index = IndexPath(row: row, section: feedImagesSection)
         delegate?.tableView?(tableView, didSelectRowAt: index)
     }
     
     func simulateFeedImageViewNearVisible(at row: Int) {
         let ds = tableView.prefetchDataSource
-        let index = IndexPath(row: row, section: feedImageSection)
+        let index = IndexPath(row: row, section: feedImagesSection)
         ds?.tableView(tableView, prefetchRowsAt: [index])
     }
     
@@ -106,16 +105,24 @@ extension ListViewController {
         simulateFeedImageViewNearVisible(at: row)
         
         let ds = tableView.prefetchDataSource
-        let index = IndexPath(row: row, section: feedImageSection)
+        let index = IndexPath(row: row, section: feedImagesSection)
         ds?.tableView?(tableView, cancelPrefetchingForRowsAt: [index])
     }
     
     func simulateLoadMoreFeedAction() {
-        guard let view = cell(row: 0, section: feedLoadMoreSection) else { return }
+        guard let view = loadMoreFeedCell() else { return }
             
         let delegate = tableView.delegate
         let index = IndexPath(row: 0, section: feedLoadMoreSection)
         delegate?.tableView?(tableView, willDisplay: view, forRowAt: index)
+    }
+    
+    var isShowingLoadMoreFeedIndicator: Bool {
+        return loadMoreFeedCell()?.isLoading == true
+    }
+    
+    private func loadMoreFeedCell() -> LoadMoreCell? {
+        cell(row: 0, section: feedLoadMoreSection) as? LoadMoreCell
     }
     
     func renderedFeedImageData(at index: Int) -> Data? {
@@ -123,13 +130,13 @@ extension ListViewController {
     }
     
     func numberOfRenderedFeedImageViews() -> Int {
-        numberOfRows(in: feedImageSection)
+        numberOfRows(in: feedImagesSection)
     }
     
     func feedImageView(at row: Int) -> UITableViewCell? {
-        cell(row: row, section: feedImageSection)
+        cell(row: row, section: feedImagesSection)
     }
     
-    private var feedImageSection: Int { 0 }
+    private var feedImagesSection: Int { 0 }
     private var feedLoadMoreSection: Int { 1 }
 }
