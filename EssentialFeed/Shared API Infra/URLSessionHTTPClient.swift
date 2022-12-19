@@ -5,6 +5,7 @@
 //  Created by Vadims Vorobjovs on 31/08/2021.
 //
 
+import os
 import Foundation
 
 public final class URLSessionHTTPClient: HTTPClient {

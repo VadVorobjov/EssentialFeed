@@ -98,8 +98,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             .zip(makeRemoteFeedLoader(after: last))
             .map { (cachedItems, newItems) in
                 (cachedItems + newItems, newItems.last)
-            }
-            .map(makePage)
+            }.map(makePage)
             .caching(to: localFeedLoader)
     }
     

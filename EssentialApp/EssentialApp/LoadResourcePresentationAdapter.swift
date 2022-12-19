@@ -32,18 +32,18 @@ final class LoadResourcePresentationAdapter<Resource, View: ResourceView> {
                 self?.isLoading = false
             })
             .sink(
-            receiveCompletion: { [weak self] completion in
-                switch completion {
-                case .finished: break
+                receiveCompletion: { [weak self] completion in
+                    switch completion {
+                    case .finished: break
+                        
+                    case let .failure(error):
+                        self?.presenter?.didFinishLoading(with: error)
+                    }
                     
-                case let .failure(error):
-                    self?.presenter?.didFinishLoading(with: error)
-                }
-                
-                self?.isLoading = false
-            }, receiveValue: { [weak self] resource in
-                self?.presenter?.didFinishLoading(with: resource)
-        })
+                    self?.isLoading = false
+                }, receiveValue: { [weak self] resource in
+                    self?.presenter?.didFinishLoading(with: resource)
+                })
     }
 }
 
