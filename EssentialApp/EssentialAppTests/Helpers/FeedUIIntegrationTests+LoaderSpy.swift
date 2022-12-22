@@ -83,7 +83,7 @@ extension FeedUIIntegrationTests {
         
         private(set) var cancelledImageURLs = [URL]()
         
-        func loadImageData(from url: URL) -> AnyPublisher<Data, Error>  {
+        func loadImageDataPublisher(from url: URL) -> AnyPublisher<Data, Error> {
             let publisher = PassthroughSubject<Data, Error>()
             imageRequests.append((url, publisher))
             return publisher.handleEvents(receiveCancel: { [weak self] in
