@@ -18,32 +18,18 @@ public final class LocalFeedLoader {
 }
 
 extension LocalFeedLoader: FeedCache {
-    public typealias SaveResult = FeedCache.Result
-
     public func save(_ feed: [FeedImage]) throws {
         try store.deleteCachedFeed()
         try store.insert(feed.toLocal(), timestamp: currentDate())
 	}
-
-	private func cache(_ feed: [FeedImage], with completion: @escaping (SaveResult) -> Void) {
-		store.insert(feed.toLocal(), timestamp: currentDate()) { [weak self] insertionResult in
-			guard self != nil else { return }
-
-			completion(insertionResult)
-		}
-	}
 }
 
 extension LocalFeedLoader {
-    public typealias LoadResult = Swift.Result<[FeedImage], Error>
-
-	public func load(completion: @escaping (LoadResult) -> Void) {
-         completion(LoadResult {
-             if let cache = try store.retrieve(), FeedCachePolicy.validate(cache.timestamp, against: currentDate()) {
-                 return cache.feed.toModels()
-             }
-             return []
-		})
+    public func load() throws -> [FeedImage] {
+        if let cache = try store.retrieve(), FeedCachePolicy.validate(cache.timestamp, against: currentDate()) {
+            return cache.feed.toModels()
+        }
+        return []
 	}
 }
 
